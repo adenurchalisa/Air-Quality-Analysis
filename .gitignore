@@ -173,8 +173,3 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Set default behavior to automatically normalize line endings
-* text=auto
-
-# Jupyter notebooks should remain untouched
-*.ipynb -text
