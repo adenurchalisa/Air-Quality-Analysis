@@ -19,7 +19,7 @@ def load_data():
     import glob
     
     # Path ke folder dataset yang berisi file-file CSV
-    dataset_folder = '../data/PRSA_Data_20130301-20170228'
+    dataset_folder = '../notebook/PRSA_Data_20130301-20170228'
     
     # Cari semua file di dalam folder (tidak hanya CSV)
     all_files_in_folder = os.listdir(dataset_folder)
