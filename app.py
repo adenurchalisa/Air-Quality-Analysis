@@ -12,53 +12,6 @@ st.set_page_config(
     layout="wide",
 )
 
-# # Fungsi untuk memuat data
-# @st.cache_data
-# def load_data():
-#     import os
-#     import glob
-    
-#     # Path ke folder dataset yang berisi file-file CSV
-#     dataset_folder = 'data/PRSA_Data_20130301-20170228'
-    
-#     # Cari semua file di dalam folder (tidak hanya CSV)
-#     all_files_in_folder = os.listdir(dataset_folder)
-    
-#     # Cari semua file CSV di dalam folder
-#     all_csv_files = glob.glob(os.path.join(dataset_folder, "*.csv"))
-    
-#     # Jika tidak ada file CSV, periksa file dengan ekstensi lain
-#     if not all_csv_files:
-#         for file in all_files_in_folder:
-#             full_path = os.path.join(dataset_folder, file)
-#             if os.path.isfile(full_path):
-#                 st.write(f"Ekstensi file: {os.path.splitext(file)[1]}")
-    
-#     # Buat list untuk menyimpan dataframe dari masing-masing file
-#     df_list = []
-    
-#     # Baca setiap file CSV dan gabungkan
-#     for file in all_csv_files:
-#         try:
-#             df_temp = pd.read_csv(file)
-#             df_list.append(df_temp)
-#         except Exception as e:
-#             st.error(f"Error membaca file {file}: {str(e)}")
-    
-#     # Gabungkan semua dataframe
-#     if df_list:
-#         df = pd.concat(df_list, ignore_index=True)
-        
-#         # Konversi kolom tanggal dan waktu
-#         df['date'] = pd.to_datetime(df[['year', 'month', 'day', 'hour']])
-        
-#         # Penanganan data missing
-#         df_clean = df.dropna(subset=['PM2.5', 'PM10', 'SO2', 'NO2'])
-#         return df_clean
-#     else:
-#         st.error("Tidak ada file CSV yang ditemukan di folder dataset!")
-#         return pd.DataFrame()  # Return empty dataframe if no files found
-
 # Load data
 df_clean = pd.read_csv("data\cleaned_data.csv")
 
