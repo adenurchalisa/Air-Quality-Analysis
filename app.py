@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # Load data
-df_clean = pd.read_csv("data\cleaned_data.csv")
+df_clean = pd.read_csv(r"data/cleaned_data.csv")
 
 # Header Dashboard
 st.title("Dashboard Analisis Kualitas Udara Beijing 2013-2017")
