@@ -16,9 +16,6 @@ Dashboard interaktif untuk menganalisis data kualitas udara di Beijing dari 2013
 Data berasal dari 12 stasiun pemantauan kualitas udara di Beijing.
 
 ## URL Aplikasi
-<<<<<<< HEAD
-https://air-quality-analysis-5pragjde3af23gzj5vonv8.streamlit.app/
-=======
 [Dashboard Interaktif](https://air-quality-analysis-5pragjde3af23gzj5vonv8.streamlit.app/)
 
 ---
@@ -57,4 +54,3 @@ Pastikan file data berada di path yang sesuai seperti yang didefinisikan dalam k
 ## Catatan
 - Gunakan data yang sudah dibersihkan (cleaned data) untuk memastikan hasil visualisasi sesuai dengan analisis data di notebook.
 - Pilihan stasiun di sidebar akan secara default memuat semua stasiun untuk konsistensi dengan notebook.
->>>>>>> e702c658364fe4203f3400cea338ec8e1cba8960
